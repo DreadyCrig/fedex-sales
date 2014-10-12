@@ -27,7 +27,12 @@
 @import "../modules/flashes";
 
 body {
-	padding: 50px 0;
+	padding: 30px 0;
+}
+
+label, th {
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .table-tools {
@@ -45,4 +50,16 @@ table.table-bordered.dataTable {
 
 div.DTTT .btn:hover {
 	color: #fff !important;
+}
+
+.hero-app-header {
+	margin-bottom: 30px;
+}
+
+.hero-app-footer {
+	margin-top: 30px;
+}
+
+.form-group button {
+	margin-top: 20px;
 }

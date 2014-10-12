@@ -1,0 +1,98 @@
+{exp:channel:form 
+  channel="registrant" 
+  logged_out_member_id="5" 
+  id="registerForm" 
+  class="register-form" 
+  return="registrant/ENTRY_ID" 
+  entry_id="{segment_2}"
+  json="yes"
+}
+  <input type="hidden" name="title" value="{{firstName}} {{lastName}}">
+  <div class="form-group">
+    <label for="firstName" class="form-label">Nombre</label>
+    <input type="text" name="registrant_first_name" value="" class="form-control" ng-model="firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="form-label">Apellido</label>
+    <input type="text" name="registrant_last_name" value="" class="form-control" ng-model="lastName">
+  </div>
+  <div class="form-group">
+    <label for="address" class="form-label">Calle Y Número</label>
+    <textarea name="registrant_address" class="form-control form-control-textarea"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="state" class="form-label">Estado</label>
+    <select class="form-control form-control-select" id="state" name="registrant_state">
+      <option value="">Distrito Federal</option>
+      <option value="">Aguascalientes</option>
+      <option value="">Baja California</option>
+      <option value="">Baja California Sur </option>
+      <option value="">Campeche</option>
+      <option value="">Coahuila </option>
+      <option value="">Colima </option>
+      <option value="">Chiapas </option>
+      <option value="">Chihuahua </option>
+      <option value="">Distrito Federal </option>
+      <option value="">Durango </option>
+      <option value="">Guanajuato </option>
+      <option value="">Guerrero </option>
+      <option value="">Hidalgo </option>
+      <option value="">Jalisco </option>
+      <option value="">Estado de México </option>
+      <option value="">Michoacán </option>
+      <option value="">Morelos </option>
+      <option value="">Nayarit</option>
+      <option value="">Nuevo León </option>
+      <option value="">Oaxaca </option>
+      <option value="">Puebla </option>
+      <option value="">Querétaro</option>
+      <option value="">Quintana Roo</option>
+      <option value="">San Luis Potosí</option>
+      <option value="">Sinaloa </option>
+      <option value="">Sonora</option>
+      <option value="">Tabasco</option>
+      <option value="">Tamaulipas </option>
+      <option value="">Tlaxcala</option>
+      <option value="">Veracruz</option>
+      <option value="">Yucatán </option>
+      <option value="">Zacatecas</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="telefono" class="form-label">Teléfono</label>
+    <input type="tel" id="telefono" name="registrant_telephone" value="" class="form-control form-control-tel">
+  </div>
+  <div class="form-group">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="registrant_email" value="" id="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="employees" class="form-label">No. Empleado</label>
+    <input type="text" name="registrant_employee_num" id="employee" value="" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="tsrAE" class="form-label">TSR o AE</label>
+    <select name="registrant_tsr_ae" id="tsrAE" class="form-control">
+      <option value="TSR">TSR</option>
+      <option value="AE">AE</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="accountNumber" class="form-label">No. Cuenta</label>
+    <input type="text" name="registrant_account_number" id="accountNumber" value="" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="accountName" class="form-label">Nombre de la compañía bajo la cuenta</label>
+    <input type="text" name="registrant_account_name" id="accountName" value="" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="accountType" class="form-label">Cuenta Internacional o Doméstica</label>
+    <select name="registrant_account_type" id="accountType" class="form-control form-control-select">
+      <option value="International">Internacional</option>
+      <option value="Domestic">Doméstica</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+  </div>
+{/exp:channel:form}
