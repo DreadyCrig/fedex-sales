@@ -1,0 +1,30 @@
+
+// Inline Forms
+.form-inline {
+	@include clearfix();
+	.form-group {
+		float: left;
+		margin-right: 5px;
+		&.form-controls {
+			float: right;
+		}
+	}
+	button {
+		margin: 0 0 0 10px;
+	}
+}
+
+// Edit Form
+.edit, .replace {
+	display: none;
+}
+input.edit-name {
+	margin-bottom: 0;
+	width: 360px;
+	padding: 0.6em 0.5em;
+}
+
+::placeholder {
+	color: #BCBCBC;
+	font-weight: 300;
+}

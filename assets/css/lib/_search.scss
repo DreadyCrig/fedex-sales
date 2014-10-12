@@ -1,0 +1,35 @@
+
+.search--form-group {
+	box-sizing: border-box;
+	padding-left: 21px;
+	position: relative;
+	.icon {
+		position: absolute;
+		top: 27px;
+		left: 30px;
+	}	
+}
+
+input.search--form-field {
+	background-color: transparent;
+	border: none;
+	border-radius: 2px;
+	box-shadow: none;
+	display: inline-block;
+	padding-left: 2em;
+	color: $lavender-dark;
+	font-weight: 300;
+	margin: 17px 0 0 0;
+	width: 60%;
+	@include transition (all .25s ease-in-out);
+	&::placeholder {
+		color: $lavender-dark;
+		font-weight: 300;
+	}
+	&[type="search"]:focus {
+		background-color: lighten($lavender-light, 2);
+		box-shadow: none;
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,54 @@
+{
+    "name" : "template",
+    "label": "Template",
+    "auth": true,
+    "public": false,
+    "enabled": false,
+    "methods": [
+        {
+            "method": "create_template",
+            "name": "Create a new template",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "read_template",
+            "name": "Read an template",
+            "free_api": true,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                },
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "update_template",
+            "name": "Update an template",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "delete_template",
+            "name": "Delete an template",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

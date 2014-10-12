@@ -1,0 +1,29 @@
+{
+    "name" : "config",
+    "label": "Config",
+    "auth": true,
+    "public": false,
+    "enabled": false,
+    "methods": [
+        {
+            "method": "read_config",
+            "name": "Get a specific config",
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                }
+            ]
+        },
+        {
+            "method": "update_config",
+            "name": "Update a specific config",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

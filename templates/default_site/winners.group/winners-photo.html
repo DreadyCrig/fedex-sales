@@ -1,0 +1,15 @@
+{layout="layouts/_super-hero" include_jquery="yes" class="__page-photo-winner"}
+
+<div class="current-winner">
+	{exp:channel:entries
+		channel="winner"
+		disable="categories|category_fields|member_data|pagination|trackbacks"
+		dynamic="off"
+		limit="1"
+	}
+	<div class="winner-portrait">
+		<img src="{winner_photo}" alt="{title}">
+	</div>
+	<div class="winner-name">{title}</div>
+	{/exp:channel:entries}
+</div>

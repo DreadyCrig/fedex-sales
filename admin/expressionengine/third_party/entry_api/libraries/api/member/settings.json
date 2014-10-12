@@ -1,0 +1,53 @@
+{
+    "name" : "member",
+    "label": "Member",
+    "auth": true,
+    "public": false,
+    "enabled": true,
+    "methods": [
+        {
+            "method": "create_member",
+            "name": "Create Member",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "read_member",
+            "name": "Read Member",
+            "soap": [
+                 {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                },
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "update_member",
+            "name": "Update Member",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "delete_member",
+            "name": "Delete member",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

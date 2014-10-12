@@ -1,0 +1,69 @@
+{
+    "name" : "entry",
+    "label": "Entry",
+    "auth": true,
+    "public": false,
+    "enabled": true,
+    "methods": [
+        {
+            "method": "create_entry",
+            "name": "Create a new entry",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "read_entry",
+            "name": "Read an entry",
+            "free_api": true,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                },
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "update_entry",
+            "name": "Update an entry",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "delete_entry",
+            "name": "Delete an entry",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "search_entry",
+            "name": "Search entries",
+            "free_api": true,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                },
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

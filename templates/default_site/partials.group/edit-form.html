@@ -1,0 +1,15 @@
+<div class="edit">
+	
+	{exp:channel:form channel="winner" id="editForm" class="edit-form form-inline animated fadeIn" entry_id="{embed:entry_id}"}
+		<div class="form-group">
+			<input type="text" name="title" value="{title}" class="edit-name" placeholder="Enter winner's name">
+		</div>
+		<div class="form-group">
+			{field:winner_photo}
+		</div>
+		<div class="form-group form-controls">
+			<button type="submit">Submit</button>
+			<button type="button" data-toggle="cancel" class="outline">Cancel</button>
+		</div>
+	{/exp:channel:form}
+</div>

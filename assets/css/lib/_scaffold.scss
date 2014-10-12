@@ -1,0 +1,24 @@
+.app, .app--sidebar, .app--content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	box-sizing: border-box;
+}
+.app {
+	position: absolute;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.app--sidebar {
+	width: 270px;
+	left: 0;
+	background-color: $brand-primary;
+}
+
+.app--content {
+	right: 0;
+	left: 270px;
+	min-width: 1010px;
+}

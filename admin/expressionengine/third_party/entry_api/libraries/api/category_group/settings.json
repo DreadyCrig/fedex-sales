@@ -1,0 +1,50 @@
+{
+    "name" : "category_group",
+    "label": "Category Group",
+    "auth": true,
+    "public": false,
+    "enabled": true,
+    "methods": [
+        {
+            "method": "create_category_group",
+            "name": "Create a category group",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "read_category_group",
+            "name": "Read a category group",
+            "free_api": true,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                }
+            ]
+        },
+        {
+            "method": "update_category_group",
+            "name": "Update a category group",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "delete_category_group",
+            "name": "Delete a category group",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

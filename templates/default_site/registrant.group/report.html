@@ -1,0 +1,60 @@
+{layout="layouts/_super-hero" include_jquery="yes" class="__page-registrant"}
+
+<div class="hero-app">
+	<div class="hero-app--report">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="table-tools"></div>
+					<table class="table table-bordered table-striped" id="registrantTable">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>No. Empleado</th>
+								<th>TSR o AE</th>
+								<th>No. Cuenta</th>
+								<th>Nombre de la Compañía</th>
+								<th>Tipo de Cuenta</th>
+							</tr>
+						</thead>
+						<tbody>
+							{exp:channel:entries
+								channel="registrant"
+								disable="categories|category_fields|member_data|pagination|trackbacks"
+								dynamic="off"
+							}
+								
+							<tr>
+								<td>{registrant_first_name} {registrant_last_name}</td>
+								<td>{registrant_employee_num}</td>
+								<td>{registrant_tsr_ae}</td>
+								<td>{registrant_account_number}</td>
+								<td>{registrant_account_name}</td>
+								<td>{registrant_account_type}</td>
+							</tr>
+							{/exp:channel:entries}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		// Add DataTables
+	  var table = $('#registrantTable').dataTable();
+	  var tableTools = new $.fn.dataTable.TableTools( table, {
+	    "sSwfPath": "/assets/swf/copy_csv_xls_pdf.swf",
+	    "aButtons": [
+	      {
+	        "sExtends": "xls",
+	        "sButtonText": "Export to Excel"
+	      }
+	    ]
+	  });
+	    
+	  $( tableTools.fnContainer() ).appendTo('.table-tools');
+	});
+</script>

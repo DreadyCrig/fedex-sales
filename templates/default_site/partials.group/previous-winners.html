@@ -1,0 +1,16 @@
+{exp:channel:entries
+	channel="winner"
+	disable="categories|category_fields|member_data|pagination|trackbacks"
+	dynamic="off"
+}
+<div class="winners--thumb">
+	<img src="{winner_photo}" alt="{title}">
+</div>
+<div class="winners--meta">
+	<small class="winner--meta-context">Current Winner</small>
+	<span class="winner--meta-title">{title}</span>
+</div>
+<div class="winners--extra">
+	<button type="button" data-toggle="replace">Replace Winner</button>
+</div>
+{/exp:channel:entries}

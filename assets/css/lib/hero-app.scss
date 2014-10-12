@@ -1,0 +1,40 @@
+@import "bourbon";
+@import "../modules/settings";
+@import "../vendor/bootstrap/bootstrap";
+@import "../vendor/sweetalert/sweet-alert";
+@import "hero-scaffold";
+
+// Components Styles
+
+
+// Utilities
+@import "icons";
+@import "helpers";
+@import "animate";
+
+
+@import "../modules/scaffold";
+@import "../modules/type";
+@import "../modules/buttons";
+@import "../modules/forms";
+@import "../modules/navs";
+
+@import "../modules/login";
+@import "../modules/hero";
+@import "../modules/registration";
+@import "../modules/winner";
+@import "../modules/profile";
+@import "../modules/flashes";
+
+body {
+	padding: 50px 0;
+}
+
+.table-tools {
+	margin-bottom: 1em;
+	text-align: right;
+}
+
+table.table-bordered.dataTable {
+border-collapse: collapse !important;
+}

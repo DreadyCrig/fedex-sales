@@ -1,0 +1,131 @@
+html .assets-tv-file.assets-tv-bigthumb .assets-thumb {
+	background-size: cover !important;
+}
+html .assets-fm {
+	font-size: 14px;
+}
+html .assets-buttons .assets-btn {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+html .assets-sheet .assets-buttons {
+	margin: 0;
+	padding: 6px 25px;
+	border-top: 1px solid #f5f5f5;
+	text-align: right;
+}
+.assets-fm table {
+	table-layout: initial !important;
+}
+.assets-fm-view, .assets-fm-refresh {
+		margin-top: -8px;
+}
+
+.assets-thumbview > ul {
+	overflow: hidden;
+}
+
+html .assets-thumb-wrapper {
+	margin: 0 0 0 0 !important;
+	outline: none;
+}
+
+html .assets-fm .assets-tv-file {
+	width: auto;
+	outline: none;
+}
+
+html.assets-fm .assets-tv-file {
+	width: 77px;
+}
+
+html li.assets-fm-folder a.assets-selected {
+	background-color: $lavender-dark !important;
+	color: #fff !important;
+	padding-left: 20px !important;
+}
+
+html .assets-fm-sidebar .assets-qq-upload-button {
+	margin: 25px;
+	padding: 7px 12px 7px 40px;
+	font-size: 15px;
+	background-position: 10px -29px;
+	text-transform: uppercase;
+}
+html li.assets-fm-folder a {
+	display: block;
+	margin-top: 1px;
+	padding: 10px 0;
+	line-height: 14px;
+	cursor: default;
+	white-space: pre;
+}
+html .assets-btn.assets-submit {
+	color: #fff !important;
+	background-color: $brand-primary !important;
+}
+
+html .assets-btn:not(.assets-disabled):hover, html .assets-btn:not(.assets-disabled).assets-active, html .assets-btn:not(.assets-disabled).active, html .assets-btn.assets-submit {
+	color: #fff !important;
+	background-color: $brand-primary !important;
+	outline: none;
+}
+
+.app {
+
+	.assets-thumb {
+		width: 39px !important;
+		height: 39px !important;
+		border-radius: 4px;
+		border: 1px solid $brand-primary;
+		background-size: cover;
+	}
+
+	.assets-thumb-wrapper {
+			border: none;
+			box-shadow: none;
+			background: transparent;
+		}
+
+		.assets-tv-bigthumb {
+			width: auto;
+		}
+
+		.assets-tv-file {
+			padding: 0 10px 0 20px;
+			width: auto;
+		}
+		.assets-field {
+			float: left;
+		}
+
+		.assets-buttons {
+			float: left;
+			margin-top: 0; 
+		}
+
+		.assets-buttons .assets-btn {
+			font-size: 16px;
+		}
+		
+		.assets-btn {
+			display: inline-block;
+			border-radius: 3px;
+			border: none;
+			padding: em(9) em(22) em(8);
+			text-transform: uppercase;
+			color: $brand-primary !important;
+			letter-spacing: 1px;
+			white-space: nowrap;
+			cursor: pointer;
+			background-color: lighten($lavender-dark, 25);
+			text-decoration: none !important;
+		}
+		.assets-btn:not(.assets-disabled):hover, .assets-btn:not(.assets-disabled).assets-active, .assets-btn:not(.assets-disabled).active, .assets-btn.assets-submit {
+			color: #fff !important;
+			background-color: $brand-secondary !important;
+		}
+
+}
+

@@ -1,0 +1,20 @@
+.app--profile {
+	margin-bottom: 5em;
+	h3 {
+		margin-top: 2em;
+		margin-bottom: .5em;
+	}
+	.td-label {
+		font-family: $font-family-base;
+		text-transform: uppercase;
+	}
+	.td-form-group {
+		label {
+			font-family: $font-family-sans-serif;
+		}
+	}
+	
+	.form-control-actions {
+		padding-top: 8px;
+	}
+}

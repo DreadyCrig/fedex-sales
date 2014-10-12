@@ -1,0 +1,30 @@
+.card {
+	background-color: #fff;
+	-moz-box-shadow:    0px 0px 20px 0px rgba(0,0,0,0.25);
+	box-shadow:         0px 0px 20px 0px rgba(0,0,0,0.25);
+	border-radius: 2px;
+}
+
+.card--header, .card--footer {
+	padding: 30px;
+	text-align: center;
+}
+
+input.card--field, 
+input.card--field:focus {
+	box-shadow: none;
+	border: none;
+	padding-left: 24px;
+}
+
+input.card--field::placeholder {
+	color: #BCBCBC;
+	font-weight: 300;
+}
+
+.card--header, .card--body .form-controls {
+	border-bottom: 1px solid #eee;
+}
+.card--body .form-controls {
+	padding-top: .65em;
+}

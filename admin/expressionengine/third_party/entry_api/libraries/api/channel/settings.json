@@ -1,0 +1,61 @@
+{
+    "name" : "channel",
+    "label": "Channel",
+    "auth": true,
+    "public": false,
+    "enabled": true,
+    "methods": [
+        {
+            "method": "create_channel",
+            "name": "Create a Channel",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "read_channel",
+            "name": "Read a channel",
+            "free_api": true,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                }
+            ]
+        },
+        {
+            "method": "update_channel",
+            "name": "Update a channel",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "delete_channel",
+            "name": "Delete a channel",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "search_channel",
+            "name": "Search a channel",
+            "free_api": true,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                }
+            ]
+        }
+    ]
+}

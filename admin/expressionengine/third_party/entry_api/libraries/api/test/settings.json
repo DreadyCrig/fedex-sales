@@ -1,0 +1,19 @@
+{
+    "name" : "test",
+    "label": "Test",
+    "auth": true,
+    "public": false,
+    "enabled": false,
+    "methods": [
+        {
+            "method": "test_method",
+            "name": "Just a test method",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

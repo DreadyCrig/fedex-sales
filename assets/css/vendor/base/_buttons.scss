@@ -1,0 +1,28 @@
+.button,
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &.outline {
+  	background-color: transparent;
+  	border: 2px solid $brand-primary;
+  	color: $brand-primary;
+  	box-sizing: border-box;
+  	padding: em(10) em(22);
+  	&:hover {
+  		background-color: $hover-button-color;
+  		border-color: $hover-button-color;
+  		color: #fff;
+  	}
+    &.danger {
+      border-color: #DD3D6E;
+      color: #DD3D6E;
+    }
+  }
+}

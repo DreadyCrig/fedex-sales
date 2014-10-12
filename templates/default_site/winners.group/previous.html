@@ -1,0 +1,56 @@
+{layout="layouts/_base" include_jquery="yes" class="__page-winners-cp __page-winners-previous"}
+
+<div class="app">
+
+	{embed="partials/sidebar"}
+
+	<div class="app--content animated fadeIn">
+		<header class="content--header">
+			<div class="content--toolbar">
+				<div class="search">
+					<form action="" class="search--form">
+						<div class="search--form-group">
+							<label class="icon icon-search" for="search"></label>
+							<input type="search" class="search--form-field" placeholder="Search" id="search">
+						</div>
+					</form>
+				</div>
+				<div class="power">
+					<a href="/site/logout" class="logout"><i class="icon icon-power"></i></a>
+				</div>
+			</div>
+		</header>
+
+		<section class="winners">
+			<header class="winners--header">
+				<h2>Previous Winners 
+					<span class="week-of-date">
+					{exp:stats channel="winner"}Total number of winners: <strong>{total_entries}</strong>{/exp:stats}
+					</span>
+				</h2>
+			</header>
+			
+			{exp:channel:entries
+				channel="winner"
+				disable="categories|category_fields|member_data|pagination|trackbacks"
+				dynamic="off"
+			}
+			<div class="winners--row {switch="odd|even"}">
+				<div class="winners--thumb">
+					<img src="{winner_photo}" alt="{title}">
+				</div>
+				<div class="winners--meta">
+					<small class="winner--meta-context"><strong>Won on:</strong> {entry_date format="%M %d%S, %Y"}</small>
+					<span class="winner--meta-title">{title}</span>
+				</div>
+				<div class="winners--extra">
+					
+				</div>
+			</div>
+			{/exp:channel:entries}
+			
+		</section>
+	</div>
+
+</div>
+

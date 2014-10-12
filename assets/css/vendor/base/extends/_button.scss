@@ -1,0 +1,32 @@
+%button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-button-color;
+  border-radius: $base-border-radius;
+  color: white;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: $base-font-size;
+  font-weight: 500;
+  line-height: 1;
+  padding: em(12) em(22);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $base-font-family;
+  
+  @include transition (all .25s ease-in-out);
+  
+  &:hover, &:focus {
+    background-color: $hover-button-color;
+    color: white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.--block {
+    width: 100%;
+    display: block;
+  }
+}

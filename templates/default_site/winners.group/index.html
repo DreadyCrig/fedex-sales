@@ -1,0 +1,62 @@
+{layout="layouts/_base" include_jquery="yes" class="__page-winners-cp"}
+
+<div class="app">
+
+	{embed="partials/sidebar"}
+
+	<div class="app--content animated fadeIn">
+		<header class="content--header">
+			<div class="content--toolbar">
+				<div class="search">
+					<form action="" class="search--form">
+						<div class="search--form-group">
+							<label class="icon icon-search" for="search"></label>
+							<input type="search" class="search--form-field" placeholder="Search" id="search">
+						</div>
+					</form>
+				</div>
+				<div class="power">
+					<a href="/site/logout" class="logout"><i class="icon icon-power"></i></a>
+				</div>
+			</div>
+		</header>
+
+		<section class="winners">
+			<header class="winners--header">
+				<h2>Choose Weekly Winner <span class="week-of-date">{current_time format="%l, %F %d%S, %Y"}</span></h2>
+			</header>
+
+			<div class="winners--row current">
+					{embed="partials/current-winner"}
+					{exp:channel:entries
+						channel="winner"
+						disable="custom_fields|categories|category_fields|member_data|pagination|trackbacks"
+						dynamic="off"
+						limit="1"
+					}
+					{embed="partials/replace-form"}
+					{/exp:channel:entries}
+			</div>
+			
+		</section>
+
+		<section class="preview">
+			<hr class="preview--line">
+			<div class="current-winner">
+				{exp:channel:entries
+					channel="winner"
+					disable="categories|category_fields|member_data|pagination|trackbacks"
+					dynamic="off"
+					limit="1"
+				}
+				<div class="winner-portrait">
+					<img src="{winner_photo}" alt="{title}">
+				</div>
+				<div class="winner-name">{title}</div>
+				{/exp:channel:entries}
+			</div>
+		</section>
+	</div>
+
+</div>
+

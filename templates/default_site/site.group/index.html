@@ -1,0 +1,28 @@
+{layout="layouts/_base" include_jquery="yes" class="__page-login"}
+
+{if logged_in}
+	{redirect="/winners"}
+{if:else}
+
+<section class="__page-login-section">
+	{exp:zoo_visitor:login_form return="/winners" class="card animated zoomInUp"}
+		<header class="card--header">
+			<img src="/assets/img/fedex-logo.png" alt="FedEx">
+		</header>
+		<div class="card--body">
+			<div class="form-controls">
+				<input type="text" name="username" class="card--field" placeholder="Username" id="username" required>
+			</div>
+			<div class="form-controls">
+				<input type="password" name="password" class="card--field" placeholder="Password" id="password" required>
+			</div>
+		</div>
+		<footer class="card--footer">
+			<div class="form-controls">
+				<button type="submit" class="block">Sign In</button>
+			</div>
+		</footer>
+	{/exp:zoo_visitor:login_form}
+</section>
+
+{/if}

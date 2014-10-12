@@ -1,0 +1,64 @@
+.winners--header {
+	background-color: $lavender;
+	border-top: 1px solid darken($lavender-border, 5);
+	border-bottom: 1px solid darken($lavender-border, 5);
+	padding: 20px 30px;
+
+	h2 {
+		font-size: em(22);
+		font-weight: 600;
+		color: $brand-primary;
+		.week-of-date {
+			font-weight: 300;
+			float: right;
+			display: inline-block;
+		}
+	}
+}
+
+.winners--row {
+	padding: 20px 30px;
+	border-bottom: 1px solid darken($lavender-border, 5);
+	&.current { 
+		background-color: $lavender-light;
+	}
+	&.even {
+		background-color: lighten($lavender-light, 3);	
+	}
+	@include clearfix();
+}
+
+.winners--thumb, .winners--meta {
+	float: left;
+}
+
+.winner--meta-title {
+	font-size: em(24);
+	color: $brand-primary;
+	display: block;
+	line-height: 1;
+}
+
+.winner--meta-context {
+	text-transform: uppercase;
+	color: $lavender-dark;
+	font-size: em(12);
+	display: block;
+}
+
+.winners--extra {
+	float: right;
+	padding-top: 5px;
+}
+
+.winners--thumb {
+	width: 54px;
+	margin-right: 20px; 
+	img {
+		border: 2px solid $brand-primary;
+		border-radius: 100px;
+		width: 54px; height: 54px;
+		display: block;
+		box-sizing: border-box;
+	}
+}

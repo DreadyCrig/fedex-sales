@@ -1,0 +1,24 @@
+{
+    "name" : "adman",
+    "label": "Adman",
+    "auth": false,
+    "public": false,
+    "enabled": true,
+    "methods": [
+        {
+            "method": "show_adman",
+            "name": "Show an Ad",
+            "free_api": false,
+            "soap": [
+                {
+                    "name": "data",
+                    "type": "tns:ObjectList"
+                },
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+.hero {
+	position: relative;
+}
+.strip {
+	position: relative;
+	.page--login & {
+
+	}
+	height: 185px;
+	width: 100%;
+	background-color: #3A257B;
+	.emblem {
+		position: absolute;
+		top: -125px;
+		z-index: 5;
+	}
+	h1 {
+		color: #fff;
+		font-size: 64px;
+		position: relative;
+		text-align: center;
+		top: 22px;
+		padding-left: 170px;
+	}
+}
+
+.page--winner {
+	.strip {
+		position: relative;
+		height: 114px;
+		width: 100%;
+		.emblem {
+			position: absolute;
+			top: -77px;
+		}
+		h1 {
+			color: #fff;
+			font-size: 64px;
+			position: relative;
+			text-align: center;
+			top: 22px;
+			padding-left: 0;
+		}
+	}
+}
+
+.page--internal {
+	.strip {
+		position: relative;
+		height: 80px;
+		width: 100%;
+		.emblem {
+			position: absolute;
+			top: -53px;
+			img {
+				height: 168px;
+			}
+		}
+		h1 {
+			font-size: em(54);
+			top: 10px;
+		}
+
+	}		
+}
+
+.hero--group-shot {
+	width: 802px;
+	height: 440px;
+	background: url("/assets/img/group-master.png") no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 5;
+	right: -478px;
+	left: 0;
+	margin: 0 auto;
+	top: -72%;
+	@include transition (all .5s ease-in-out);
+}
+
+.hero--rocket-man {
+	width: 382px;
+	height: 740px;
+	background: url("/assets/img/flying-arrow.png") no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 5;
+	left: 50px;
+	margin: 0 auto;
+	top: 15%;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1600px) {
+	.hero--group-shot {
+		width: 1254px;
+		height: 688px;
+		right: -325px;
+	}
+	.hero--rocket-man {
+		width: 612px;
+		height: 1200px;
+		left: 140px;
+		top: -35%;
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+@media (min-width: 2056px) {
+	.hero--group-shot {
+		width: 1600px;
+		height: 878px;
+		right: -60px;
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.hero--rocket-man {
+		width: 270px;
+		height: 529px;
+		transition: all 0.5s ease-in-out;
+		top: 68%;
+		left: 80px;
+	}
+	.hero--group-shot {
+		width: 680px;
+		height: 373px;
+		right: 0;
+		left: 100px;
+		top: -154%;
+	}
+	.strip {
+		position: relative;
+		height: 80px;
+		width: 100%;
+		
+		.emblem {
+			position: absolute;
+			top: -53px;
+			img {
+				height: 168px;
+			}
+		}
+		h1 {
+			font-size: em(54);
+			top: 10px;
+		}
+
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.hero--rocket-man {
+		width: 270px;
+		height: 529px;
+		transition: all 0.5s ease-in-out;
+	}
+	.strip {
+		position: relative;
+		height: 80px;
+		width: 100%;
+		
+		.emblem {
+			position: absolute;
+			top: -53px;
+			img {
+				display: none;
+			}
+		}
+		h1 {
+			font-size: em(54);
+			top: 10px;
+		}
+
+	}
+}

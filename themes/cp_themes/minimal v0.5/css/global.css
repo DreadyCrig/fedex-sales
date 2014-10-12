@@ -1,0 +1,18 @@
+@import url("structure.css"); /* DEFINES THE GENERAL STRUCTURE */
+
+/* 
+	THIS ALLOWS YOU TO IMPORT THE STYLESHEET THROUGH SCAFFOLD FOR MORE POWERFULL CSS: 
+	
+	enabling this stylesheets allows you to easily change the colours through css variables.
+	
+	@import url("scaffold/index.php?request=style.css");
+	
+	IMPORTANT: 
+	
+	- you'll need PHP 5.2 or higher.
+	- don't forget to disable the "style.min.css" stylesheet when enabling this stylesheet
+		
+*/
+
+@import url("style.min.css");
+@import url("unique.css"); /* THIS ALLOWS YOU TO EASILY ADD CUSTOM PROJECT-SPECIFIC CSS TO YOUR THEME */

@@ -1,0 +1,49 @@
+{
+    "name" : "auth",
+    "label": "Auth",
+    "auth": false,
+    "public": true,
+    "enabled": true,
+    "methods": [
+        {
+            "method": "authenticate_username",
+            "name": "Authenticate by username",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "authenticate_email",
+            "name": "Authenticate by email",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "authenticate_member_id",
+            "name": "Authenticate by member ID",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        },
+        {
+            "method": "authenticate_session_id",
+            "name": "Authenticate by dession ID",
+            "soap": [
+                {
+                    "name": "id",
+                    "type": "xsd:string"
+                }
+            ]
+        }
+    ]
+}
