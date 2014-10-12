@@ -9293,4 +9293,7 @@ body {
 table.table-bordered.dataTable {
   border-collapse: collapse !important; }
 
+.cell-name {
+  width: 200px; }
+
 /*# sourceMappingURL=hero-app.css.map */

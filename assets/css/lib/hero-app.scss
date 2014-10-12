@@ -36,5 +36,9 @@ body {
 }
 
 table.table-bordered.dataTable {
-border-collapse: collapse !important;
+	border-collapse: collapse !important;
+}
+
+.cell-name {
+	width: 200px;
 }
