@@ -9296,4 +9296,7 @@ table.table-bordered.dataTable {
 .cell-name {
   width: 200px; }
 
+div.DTTT .btn:hover {
+  color: #fff !important; }
+
 /*# sourceMappingURL=hero-app.css.map */
