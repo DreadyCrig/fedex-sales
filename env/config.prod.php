@@ -12,7 +12,7 @@
 
 $env_db['hostname'] = 'localhost';
 $env_db['username'] = 'root';
-$env_db['password'] = 'flaver';
+$env_db['password'] = '!fedora!';
 $env_db['database'] = 'fedex';
 
 // Sample global variable for Production only

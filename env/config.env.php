@@ -15,13 +15,13 @@
 if ( ! defined('ENV'))
 {
 	switch (strtolower($_SERVER['HTTP_HOST'])) {
-		case 'fedex.gracreatives.com' :
+		case 'venderesganar.com' :
 			define('ENV', 'prod');
 			define('ENV_FULL', 'Production');
 			define('ENV_DEBUG', FALSE);
 		break;
 		
-		case 'fedexupload.stg.grgservice.com' :
+		case 'fedex.gracreatives.com' :
 			define('ENV', 'stage');
 			define('ENV_FULL', 'Staging');
 			define('ENV_DEBUG', FALSE);
