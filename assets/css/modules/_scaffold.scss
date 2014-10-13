@@ -5,124 +5,26 @@ body {
   color: $text-color;
   background-color: $body-bg;
   -webkit-font-smoothing: antialiased;
+  background-color: #F5F5F5;
 }
 
 .app {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0
+	background-color: #fff;
+	max-width: 1200px;
+	margin: 0 auto 5em;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+	padding-bottom: 3em; 
 }
 
-.app--header {
-	padding: 30px 30px 122px;
+.brand {
+	padding: 30px;
 }
-
-.app--footer {
-	
-	.page--login & {
-		background-color: #F7F7F7;
-		border-top: 1px solid #F0F0F0;
-		width: 100%;
-		padding: 30px 0;
-	}
-}
-
-.app--content {
-	.page--login & {
-	padding-bottom: 90px;
-	}
-}
-
-.footer-registration {
-	text-align: center;
-	position: relative;
-	z-index: 40;
-	h2 {
-		margin-bottom: 16px;
-	}
-}
-
-.footer-copyright {
-	text-align: center;
-	ul {
-		margin: 0;
-		padding: 0;
-		a {
-			text-decoration: underline;
-			font-size: 14px;
-		}
-	}
-	.page--login & {
-		a {
-			color: #999;
-			&:hover {
-				color: $brand-primary;
-			}
-		}
-	}
-	.page--internal & {
-		margin-bottom: 2em;
-	}
-}
-
 
 @media (min-width: 1600px) {
-	.app--footer {	
-		.page--login & {
-			width: 100%;
-			padding: 42px 0;
-		}
-	}	
-	.app--content {
-		.page--login & {
-		padding-bottom: 430px;
-		}
-	}
-	.footer-registration {
-		text-align: center;
-		.btn {
-			padding: 10px 38px;
-			font-size: 36px;
-		}
-		h2 {
-			font-size: em(46);
-			margin-bottom: 24px;
-		}
-	}
+	
 }
 
 @media (min-width: 2056px) {
-	.app--footer {	
-		.page--login & {
-			width: 100%;
-			padding: 42px 0;
-		}
-	}
-
-	.app--content {
-		.page--login & {
-		padding-bottom: 610px;
-		}
-	}
-
-	.footer-registration {
-		margin-top: 60px;
-		text-align: center;
-		.btn {
-			padding: 10px 38px;
-			font-size: 36px;
-		}
-		h2 {
-			font-size: em(46);
-			margin-bottom: 24px;
-		}
-	}
-}
-
-.page--internal {
-	.app--header {
-		padding: 30px 30px;		
-	}	
+	
 }

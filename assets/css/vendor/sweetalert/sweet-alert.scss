@@ -2,7 +2,7 @@
 // 2014 (c) - Tristan Edwards
 // github.com/t4t5/sweetalert
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300); // Open Sans font
+// @import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300); // Open Sans font
 
 .sweet-overlay {
 	background-color: rgba(black, 0.4);
@@ -22,7 +22,7 @@
 	$padding: 17px;
 
 	background-color: white;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $font-family-base;
 	width: $width;
 	padding: $padding;
 	border-radius: 5px;
@@ -52,34 +52,35 @@
 		font-size: 30px;
 		text-align: center;
 		font-weight: 600;
-		text-transform: none;
+		text-transform: uppercase;
 		position: relative;
 	}
 
 	p {
 		color: #797979;
-		font-size: 16px;
+		font-size: 20px;
 		text-align: center;
-		font-weight: 300;
+		font-weight: 400;
 		position: relative;
 		margin: 0;
 		line-height: normal;
 	}
 
 	button {
-		$btnBlue: #AEDEF4;
+		$btnBlue: #6D60A8;
 		$btnGray: #D0D0D0;
 
-		background-color: $btnBlue;
+		background: $btnBlue !important;
 		color: white;
 		border: none;
 		box-shadow: none;
 		font-size: 17px;
 		font-weight: 500;
-		border-radius: 5px;
+		border-radius: 3px;
 		padding: 10px 32px;
-		margin: 26px 5px 0 5px;
+		margin: 26px 5px;
 		cursor: pointer;
+		text-transform: uppercase;
 		&:focus {
 			outline: none;
 			box-shadow: 0 0 2px rgba(128, 179, 235, 0.5), inset 0 0 0 1px rgba(0, 0, 0, 0.05);

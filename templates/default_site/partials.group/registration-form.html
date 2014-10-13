@@ -7,23 +7,35 @@
   entry_id="{segment_2}"
   json="yes"
 }
-  <input type="hidden" name="title" value="{{firstName}} {{lastName}}">
+  <input type="hidden" name="title" value="{{fullName}}" class="title-field">
   <div class="form-group">
-    <label for="firstName" class="form-label">Nombre</label>
-    <input type="text" name="registrant_first_name" value="" class="form-control" ng-model="firstName">
+    <label for="fullName" class="form-label">Nombre Completo</label>
+    <input type="text" name="registrant_full_name" value="" class="form-control" ng-model="fullName" required data-bv-message="Por favor proporciona tu nombre completo">
   </div>
+  
   <div class="form-group">
-    <label for="lastName" class="form-label">Apellido</label>
-    <input type="text" name="registrant_last_name" value="" class="form-control" ng-model="lastName">
+    <label for="employees" class="form-label">Número de Empleado</label>
+    <input type="text" name="registrant_employee_num" id="employee" value="" class="form-control" required data-bv-message="Por favor proporciona tu número de empleado">
   </div>
+  
   <div class="form-group">
-    <label for="address" class="form-label">Calle Y Número</label>
-    <textarea name="registrant_address" class="form-control form-control-textarea"></textarea>
+    <label for="tsrAE" class="form-label">TSR o AE</label>
+    <select name="registrant_tsr_ae" id="tsrAE" class="form-control" required data-bv-message="Por favor, elige entre TSR o AE">
+      <option value="">Elige entre TSR o AE</option>
+      <option value="TSR">TSR</option>
+      <option value="AE">AE</option>
+    </select>
   </div>
+
   <div class="form-group">
-    <label for="state" class="form-label">Estado</label>
-    <select class="form-control form-control-select" id="state" name="registrant_state">
-      <option value="">Distrito Federal</option>
+    <label for="accountName" class="form-label">Nombre de la Compañía</label>
+    <input type="text" name="registrant_company_name" id="companyName" value="" class="form-control" required data-bv-message="Por favor proporciona el nombre de la empresa">
+  </div>
+
+  <div class="form-group">
+    <label for="state" class="form-label">Estado de la Compañía</label>
+    <select class="form-control form-control-select" id="state" name="registrant_state" required data-bv-message="Por favor proporciona el estado de la empresa">
+      <option value="">Estados</option>
       <option value="">Aguascalientes</option>
       <option value="">Baja California</option>
       <option value="">Baja California Sur </option>
@@ -58,41 +70,26 @@
       <option value="">Zacatecas</option>
     </select>
   </div>
+
   <div class="form-group">
-    <label for="telefono" class="form-label">Teléfono</label>
-    <input type="tel" id="telefono" name="registrant_telephone" value="" class="form-control form-control-tel">
+    <label for="accountReason" class="form-label">Razón Social de la Cuenta</label>
+    <input type="text" name="registrant_account_reason" id="accountReason" value="" class="form-control">
   </div>
+  
   <div class="form-group">
-    <label for="email" class="form-label">Email</label>
-    <input type="email" name="registrant_email" value="" id="email" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="employees" class="form-label">No. Empleado</label>
-    <input type="text" name="registrant_employee_num" id="employee" value="" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="tsrAE" class="form-label">TSR o AE</label>
-    <select name="registrant_tsr_ae" id="tsrAE" class="form-control">
-      <option value="TSR">TSR</option>
-      <option value="AE">AE</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="accountNumber" class="form-label">No. Cuenta</label>
-    <input type="text" name="registrant_account_number" id="accountNumber" value="" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="accountName" class="form-label">Nombre de cuenta</label>
-    <input type="text" name="registrant_account_name" id="accountName" value="" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="accountType" class="form-label">Cuenta Internacional o Doméstica</label>
-    <select name="registrant_account_type" id="accountType" class="form-control form-control-select">
+    <label for="accountType" class="form-label">Cliente Nacional o Internacional</label>
+    <select name="registrant_account_type" id="accountType" class="form-control form-control-select" required data-bv-message="Por favor, elige entre nacional o internacional">
       <option value="International">Internacional</option>
       <option value="Domestic">Doméstica</option>
     </select>
   </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">Registra</button>
+  
+  <!-- <div class="form-group">
+    <label for="accountNumber" class="form-label">No. Cuenta</label>
+    <input type="text" name="registrant_account_number" id="accountNumber" value="" class="form-control">
+  </div> -->
+  
+  <div class="form-group register-button">
+    <button type="submit" class="btn btn-primary btn-block btn-lg">Registra</button>
   </div>
 {/exp:channel:form}

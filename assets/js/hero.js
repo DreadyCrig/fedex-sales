@@ -7,17 +7,17 @@ $(document).ready(function(){
       if (data.success) {
         resetForm($('#registerForm'));
         swal({
-          title: "Success!",
-          text: "Great job on registering another account!",
-          confirmButtonText: "Keep going",
+          title: "Felicidades",
+          text: "¡Bien hecho, registraste una nueva cuenta!",
+          confirmButtonText: "¡Sigue participando!",
           type: "success"
         });
       } else {
         
         swal({
-          title: "Error!",
-          text: 'Failed with the following errors: '+data.errors.join(', '),
-          confirmButtonText: "Try again",
+          title: "Error",
+          text: "La cuenta no pudo ser registrada con éxito.",
+          confirmButtonText: "Trata de nuevo",
           type: "error"
         });
         resetForm($('#registerForm'));
@@ -26,11 +26,17 @@ $(document).ready(function(){
   });
 
   function resetForm($form) {
-    $form.find('input:text, input:password, input[type="email"], input[type="tel"], input:file, select, textarea').val('');
+    $form.find('input:text, input:password, input[type="email"], input[type="tel"], input:file, input.title-field, select, textarea').val('');
     $form.find('input:radio, input:checkbox')
     .removeAttr('checked').removeAttr('selected');
   }
 
+  // Validation
+  $("#registerForm").bootstrapValidator({
+        live: 'enabled',
+        submitButtons: 'button[type="submit"]',
+        trigger: "blur"
+    });
 
 
 });

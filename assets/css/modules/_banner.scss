@@ -1,0 +1,33 @@
+.hero, .banner {position: relative;}
+
+.hero {
+	top: -40px;
+}
+
+.emblem {
+	position: absolute;
+	width: 100%;
+	left: -30px;
+}
+
+.bar {
+	position: absolute;
+	height: 114px;
+	width: 100%;
+	top: 77px;
+	background-color: #331E79;
+	right: -30px;
+}
+
+.banner {
+	top: -20px;
+	min-height: 320px;
+	img {
+		position: relative;
+		display: block;
+	}		
+}
+
+.app--content {
+	margin-top: -120px;
+}

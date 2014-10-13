@@ -1,11 +1,11 @@
 {layout="layouts/_base" include_jquery="yes" class="__page-login"}
 
 {if logged_in}
-	{redirect="/winners"}
+	{redirect="/report"}
 {if:else}
 
 <section class="__page-login-section">
-	{exp:zoo_visitor:login_form return="/winners" class="card animated zoomInUp"}
+	{exp:zoo_visitor:login_form return="/report" class="card animated zoomInUp"}
 		<header class="card--header">
 			<img src="/assets/img/fedex-logo.png" alt="FedEx">
 		</header>

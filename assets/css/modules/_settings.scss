@@ -10,9 +10,9 @@ $gray-light:             #ddd;
 $gray-lighter:           #eee;
 $gray-super-light:			 #F7F7F7;
 
-$brand-primary:         #5F288E;
+$brand-primary:         #331E79;
 $brand-primary-dark:    #211366;
-$brand-accent:         	#F47920;
+$brand-accent:         	#E5702A;
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
@@ -128,12 +128,12 @@ $table-border-color:            #ddd;
 
 $btn-font-weight:                600;
 
-$btn-default-color:              $brand-primary;
-$btn-default-bg:                 transparent;
-$btn-default-border:             lighten($brand-primary, 5);
+$btn-default-color:              #fff;
+$btn-default-bg:                 $brand-accent;
+$btn-default-border:             transparent;
 
 $btn-primary-color:              #fff;
-$btn-primary-bg:                 $brand-primary;
+$btn-primary-bg:                 $brand-accent;
 $btn-primary-border:             transparent;
 
 $btn-success-color:              #fff;
@@ -423,10 +423,10 @@ $pagination-hover-bg:                  $gray-lighter;
 $pagination-hover-border:              #ddd;
 
 $pagination-active-color:              #fff;
-$pagination-active-bg:                 $brand-primary;
-$pagination-active-border:             $brand-primary;
+$pagination-active-bg:                 $brand-accent;
+$pagination-active-border:             $brand-accent;
 
-$pagination-disabled-color:            $gray-light;
+$pagination-disabled-color:            #aaa;
 $pagination-disabled-bg:               #fff;
 $pagination-disabled-border:           #ddd;
 

@@ -1,0 +1,38 @@
+label, th {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.table-tools {
+	margin: 1.5em 0;
+}
+
+table.table-bordered.dataTable {
+	border-collapse: collapse !important;
+}
+
+.cell-name {
+	width: 200px;
+}
+
+div.DTTT .btn:hover, div.DTTT .btn {
+	color: #fff !important;
+	font-size: 16px !important;
+}
+
+#registrantTable_paginate {
+	margin: 1em 0;
+}
+
+div.dataTables_info {
+	padding-top: 14px;
+}
+
+#registrantTable {
+	margin-top: 1em !important;
+}
+
+#registrantTable_length select {
+	margin-left: 5px;
+	margin-right: 5px;
+}

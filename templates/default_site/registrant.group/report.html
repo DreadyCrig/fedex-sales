@@ -1,19 +1,56 @@
 {layout="layouts/_super-hero" include_jquery="yes" class="__page-registrant"}
 
-<div class="hero-app">
-	<div class="hero-app--report">
+{if logged_out}
+	{redirect="site/index"}
+{/if}
+
+<div class="app">
+	<div class="app-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="brand">
+            <a href="#">
+              <img src="/assets/img/logo.png" alt="FedEx">
+            </a>
+          </div>
+          <ul class="nav nav-pills pull-right report-nav">
+					  <li><a href="/logout">Cerrar sesión</a></li>
+					</ul>
+        </div>
+      </div>
+      
+      <div class="hero">
+        <div class="ribbon animated bounceInLeft">
+	        <div class="bar"></div>
+	        <div class="emblem">
+	          <img src="/assets/img/vender_es_ganar-logo.png" alt="">
+	        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7 col-sm-offset-5">
+            <div class="banner animated zoomInUp">
+              <img src="/assets/img/defender.png" class="hidden-xs">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+	<div class="app--report">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<div class="table-tools"></div>
 					<table class="table table-bordered table-striped" id="registrantTable">
 						<thead>
 							<tr>
 								<th class="th-name cell-name">Nombre</th>
 								<th>No. Empleado</th>
 								<th>TSR o AE</th>
-								<th>No. Cuenta</th>
 								<th>Nombre de la Compañía</th>
+								<th>Razón Social de la Cuenta</th>
 								<th>Tipo de Cuenta</th>
 							</tr>
 						</thead>
@@ -25,16 +62,21 @@
 							}
 								
 							<tr>
-								<td class="td-name cell-name">{registrant_first_name} {registrant_last_name}</td>
+								<td class="td-name cell-name">{registrant_full_name}</td>
 								<td>{registrant_employee_num}</td>
 								<td>{registrant_tsr_ae}</td>
-								<td>{registrant_account_number}</td>
-								<td>{registrant_account_name}</td>
+								<td>{registrant_company_name}</td>
+								<td>{registrant_account_reason}</td>
 								<td>{registrant_account_type}</td>
 							</tr>
 							{/exp:channel:entries}
 						</tbody>
 					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="table-tools"></div>
 				</div>
 			</div>
 		</div>
@@ -44,17 +86,22 @@
 <script>
 	$(function(){
 		// Add DataTables
-	  var table = $('#registrantTable').dataTable();
+	  var table = $('#registrantTable').dataTable({
+	  	"language": {
+        "url": "//cdn.datatables.net/plug-ins/a5734b29083/i18n/Spanish.json"
+      }
+	  });
 	  var tableTools = new $.fn.dataTable.TableTools( table, {
 	    "sSwfPath": "/assets/swf/copy_csv_xls_pdf.swf",
 	    "aButtons": [
 	      {
 	        "sExtends": "xls",
-	        "sButtonText": "Export to Excel"
+	        "sButtonText": "Exportar a Excel"
 	      }
 	    ]
 	  });
 	    
 	  $( tableTools.fnContainer() ).appendTo('.table-tools');
+
 	});
 </script>
