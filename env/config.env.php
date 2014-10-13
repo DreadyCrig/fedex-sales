@@ -20,6 +20,12 @@ if ( ! defined('ENV'))
 			define('ENV_FULL', 'Production');
 			define('ENV_DEBUG', FALSE);
 		break;
+
+		case 'www.venderesganar.com' :
+			define('ENV', 'prod');
+			define('ENV_FULL', 'Production');
+			define('ENV_DEBUG', FALSE);
+		break;
 		
 		case 'fedex.gracreatives.com' :
 			define('ENV', 'stage');
