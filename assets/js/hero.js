@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+  // Validation
+  $("#registerForm").bootstrapValidator({
+    live: 'enabled',
+    submitButtons: 'button[type="submit"]',
+    trigger: "blur"
+  });
   
   // Submit Registrant entry via ajax
   $('#registerForm').ajaxForm({
@@ -30,13 +37,6 @@ $(document).ready(function(){
     $form.find('input:radio, input:checkbox')
     .removeAttr('checked').removeAttr('selected');
   }
-
-  // Validation
-  $("#registerForm").bootstrapValidator({
-        live: 'enabled',
-        submitButtons: 'button[type="submit"]',
-        trigger: "blur"
-    });
 
 
 });
