@@ -53,6 +53,7 @@
 								<th>Razón Social de la Cuenta</th>
 								<th>Tipo de Cuenta</th>
 								<th>Estado</th>
+								<th>Fecha</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -70,6 +71,7 @@
 								<td>{registrant_account_reason}</td>
 								<td>{registrant_account_type}</td>
 								<td>{registrant_state}</td>
+								<td>{entry_date format="%m/%d/%Y"}</td>
 							</tr>
 							{/exp:channel:entries}
 						</tbody>
