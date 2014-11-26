@@ -1,0 +1,60 @@
+{layout="layouts/_super-hero" include_jquery="yes" class="__page-registrant"}
+
+<div class="app">
+	<div class="app-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="brand">
+            <a href="#">
+              <img src="/assets/img/logo.png" alt="FedEx">
+            </a>
+          </div>
+          <ul class="nav nav-pills pull-right report-nav">
+					  <li><a href="/logout">Cerrar sesión</a></li>
+					</ul>
+        </div>
+      </div>
+      
+      <div class="hero">
+        <div class="ribbon animated bounceInLeft">
+	        <div class="bar"></div>
+	        <div class="emblem">
+	          <img src="/assets/img/vender_es_ganar-logo.png" alt="">
+	        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7 col-sm-offset-5">
+            <div class="banner animated zoomInUp">
+              <img src="/assets/img/defender.png" class="hidden-xs">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+	<div class="app--lookup">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Busca Sus Registros</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		// Add DataTables
+	  var table = $('#lookupTable').dataTable({
+	  	"language": {
+        "url": "//cdn.datatables.net/plug-ins/a5734b29083/i18n/Spanish.json"
+      },
+      "order": []
+	  });
+
+	});
+</script>

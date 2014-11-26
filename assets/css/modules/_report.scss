@@ -10,3 +10,25 @@
 		text-transform: uppercase;
 	}
 }
+
+.cell-employee-no {
+	width: 110px !important;
+}
+.cell-tsr-ae {
+	width: 65px !important;
+}
+
+.cell-type {
+	width: 105px !important; 
+}
+
+.cell-tsr-ae, .cell-employee-no {
+	text-align: center;
+}
+
+.registrant-table {
+	font-size: 13px;
+	td {
+		vertical-align: middle !important;
+	}
+}

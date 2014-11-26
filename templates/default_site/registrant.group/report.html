@@ -43,17 +43,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<table class="table table-bordered table-striped" id="registrantTable">
+					<table class="table table-bordered table-striped table-condensed registrant-table" id="registrantTable">
 						<thead>
 							<tr>
 								<th class="th-name cell-name">Nombre</th>
-								<th>No. Empleado</th>
-								<th>TSR o AE</th>
-								<th>Nombre de la Compañía</th>
-								<th>Razón Social de la Cuenta</th>
-								<th>Tipo de Cuenta</th>
-								<th>Estado</th>
-								<th>Fecha</th>
+								<th class="th-employee-no cell-employee-no">No. Empleado</th>
+								<th class="th-tsr-ae cell-tsr-ae">TSR o AE</th>
+								<th class="th-company cell-company">Nombre de la Compañía</th>
+								<th class="th-social cell-social">Razón Social de la Cuenta</th>
+								<th class="th-type cell-type">Tipo de Cuenta</th>
+								<th class="th-state cell-state">Estado</th>
+								<th class="th-date cell-date">Fecha</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -66,13 +66,13 @@
 								
 							<tr>
 								<td class="td-name cell-name">{registrant_full_name}</td>
-								<td>{registrant_employee_num}</td>
-								<td>{registrant_tsr_ae}</td>
-								<td>{registrant_company_name}</td>
-								<td>{registrant_account_reason}</td>
-								<td>{registrant_account_type}</td>
-								<td>{registrant_state}</td>
-								<td>{entry_date format="%m/%d/%Y"}</td>
+								<td class="td-employee-no cell-employee-no">{registrant_employee_num}</td>
+								<td class="td-tsr-ae cell-tsr-ae">{registrant_tsr_ae}</td>
+								<td class="td-company cell-company">{registrant_company_name}</td>
+								<td class="td-social cell-social">{registrant_account_reason}</td>
+								<td class="td-type cell-type">{registrant_account_type}</td>
+								<td class="td-state cell-state">{registrant_state}</td>
+								<td class="td-date cell-date">{entry_date format="%m/%d/%Y"}</td>
 							</tr>
 							{/exp:channel:entries}
 						</tbody>
